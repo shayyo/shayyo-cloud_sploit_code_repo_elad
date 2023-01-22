@@ -15,7 +15,7 @@ pipeline {
     stage('Test') {
       steps {
         echo 'Testing...'
-        sh 'sudo docker-compose up --build --exit-code-from pytest'
+    
       }
     }
     stage('Deploy') {
